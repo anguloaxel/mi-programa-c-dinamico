@@ -5,7 +5,7 @@
 
 int main() {
     int *arr; // Declaramos un puntero a un entero, que apuntará al inicio de nuestro arreglo dinámico
-    int n;    // Variable para almacenar el tamaño deseado del arreglo
+    int n,i;    // Variable para almacenar el tamaño deseado del arreglo
 
     printf("Bienvenido al programa de memoria dinamica en C.\n");
     printf("Ingrese el numero de elementos para el arreglo: ");
@@ -31,7 +31,7 @@ int main() {
 	
 	// Inicializar y mostrar los elementos del arreglo
 	printf("Inicializando y mostrando los elementos del arreglo:\n");
-	for (int i = 0; i < n; i++) {
+	for (i = 0; i < n; i++) {
 		arr[i] = i * 100; // Asignamos un valor simple para el ejemplo
 		printf("Elemento en indice %d: %d\n", i, arr[i]);
 	}
